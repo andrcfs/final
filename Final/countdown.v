@@ -10,14 +10,6 @@ module countdown(
     output reg [3:0] milli
 );
 
-integer count;
-reg blink_state;
-
-initial begin
-    count = 0;
-    blink_state = 1;
-end
-
 always @(posedge clk, posedge reset)
 begin
     if (reset)
@@ -26,10 +18,9 @@ begin
         centi <= 0;
         deci <= 0;
         seg1 <= 0;
-        seg2 <= 1;
-        min <= 0;
-        blink_state <= 1;
-        count <= 0;
+        seg2 <= 0;
+        min <= 5;
+
     end
     else if(min==0 && seg2==0 && seg1==0 && deci==0 && centi==0 && milli==0)
     begin
