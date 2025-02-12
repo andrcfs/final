@@ -1,0 +1,59 @@
+|final
+LEDR[0] <= dica2:inst.LEDR[0]
+LEDR[1] <= dica2:inst.LEDR[1]
+LEDR[2] <= dica2:inst.LEDR[2]
+LEDR[3] <= dica2:inst.LEDR[3]
+LEDR[4] <= dica2:inst.LEDR[4]
+LEDR[5] <= dica2:inst.LEDR[5]
+LEDR[6] <= dica2:inst.LEDR[6]
+clock => inst2.IN0
+SW[0] => dica2:inst.SW[0]
+SW[1] => dica2:inst.SW[1]
+SW[2] => dica2:inst.SW[2]
+SW[3] => dica2:inst.SW[3]
+SW[4] => dica2:inst.SW[4]
+SW[5] => dica2:inst.SW[5]
+SW[6] => dica2:inst.SW[6]
+
+
+|final|dica2:inst
+SW[0] => count.OUTPUTSELECT
+SW[0] => count.OUTPUTSELECT
+SW[0] => count.OUTPUTSELECT
+SW[1] => count.OUTPUTSELECT
+SW[1] => count.OUTPUTSELECT
+SW[1] => count.OUTPUTSELECT
+SW[2] => count.OUTPUTSELECT
+SW[2] => count.OUTPUTSELECT
+SW[2] => count.OUTPUTSELECT
+SW[3] => count.OUTPUTSELECT
+SW[3] => count.OUTPUTSELECT
+SW[3] => count.OUTPUTSELECT
+SW[4] => count.OUTPUTSELECT
+SW[4] => count.OUTPUTSELECT
+SW[4] => count.OUTPUTSELECT
+SW[5] => count.OUTPUTSELECT
+SW[5] => count.OUTPUTSELECT
+SW[5] => count.OUTPUTSELECT
+SW[6] => count.OUTPUTSELECT
+SW[6] => count.OUTPUTSELECT
+SW[6] => count.OUTPUTSELECT
+enter => LEDR[0]~reg0.CLK
+enter => LEDR[1]~reg0.CLK
+enter => LEDR[2]~reg0.CLK
+enter => LEDR[3]~reg0.CLK
+enter => LEDR[4]~reg0.CLK
+enter => LEDR[5]~reg0.CLK
+enter => LEDR[6]~reg0.CLK
+enter => count[0].CLK
+enter => count[1].CLK
+enter => count[2].CLK
+LEDR[0] <= LEDR[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= LEDR[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= LEDR[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= LEDR[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= LEDR[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= LEDR[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= LEDR[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
